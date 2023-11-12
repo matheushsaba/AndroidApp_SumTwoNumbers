@@ -1,4 +1,4 @@
-package com.example.sumtwonumbers
+package com.example.androidtoolset
 
 import android.content.Intent
 import android.hardware.Sensor

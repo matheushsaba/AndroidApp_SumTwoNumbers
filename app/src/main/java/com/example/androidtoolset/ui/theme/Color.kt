@@ -1,4 +1,4 @@
-package com.example.sumtwonumbers.ui.theme
+package com.example.androidtoolset.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

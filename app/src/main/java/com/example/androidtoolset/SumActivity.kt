@@ -1,10 +1,9 @@
-package com.example.sumtwonumbers
+package com.example.androidtoolset
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.ComponentActivity
-import androidx.appcompat.app.AppCompatActivity
 
 class SumActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

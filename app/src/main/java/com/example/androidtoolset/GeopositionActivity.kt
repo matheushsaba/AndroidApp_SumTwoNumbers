@@ -1,4 +1,4 @@
-package com.example.sumtwonumbers
+package com.example.androidtoolset
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -10,7 +10,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.google.android.gms.tasks.Task
 
 class GeopositionActivity : ComponentActivity() {
 

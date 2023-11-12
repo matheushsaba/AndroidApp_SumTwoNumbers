@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SumTwoNumbers"
+rootProject.name = "AndroidToolSet"
 include(":app")

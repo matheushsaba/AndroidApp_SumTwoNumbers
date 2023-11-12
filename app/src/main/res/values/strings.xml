@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SumTwoNumbers</string>
+    <string name="app_name">AndroidToolSet</string>
     <string name="sum_numbers">Sum Two Numbers</string>
     <string name="send_message">Send Message To \n Another Screen</string>
     <string name="check_acceleration">Check Acceleration</string>

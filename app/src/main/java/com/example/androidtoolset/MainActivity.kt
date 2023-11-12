@@ -1,4 +1,4 @@
-package com.example.sumtwonumbers
+package com.example.androidtoolset
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.sumtwonumbers.ui.theme.SumTwoNumbersTheme
+import com.example.androidtoolset.ui.theme.AndroidToolsetTheme
 import android.widget.ImageButton
 import android.widget.Toast
 
@@ -100,7 +100,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    SumTwoNumbersTheme {
+    AndroidToolsetTheme {
         Greeting("Android")
     }
 }
