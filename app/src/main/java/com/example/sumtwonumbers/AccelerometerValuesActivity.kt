@@ -33,10 +33,6 @@ class AccelerometerValuesActivity : ComponentActivity(), SensorEventListener {
         sensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL)
     }
 
-    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        // Can be used to respond to sensor accuracy changes
-    }
-
     override fun onSensorChanged(event: SensorEvent) {
         if (event.sensor.type == Sensor.TYPE_ACCELEROMETER) {
             val values = event.values
