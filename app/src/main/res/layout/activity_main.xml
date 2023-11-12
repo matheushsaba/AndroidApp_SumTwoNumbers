@@ -1,52 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="3"
     android:orientation="vertical"
-    android:paddingTop="300px"
+    android:alignmentMode="alignMargins"
+    android:columnOrderPreserved="false"
+    android:padding="32dp"
     >
 
-    <TextView
+    <!-- Sum -->
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="First Number:" />
-    <EditText
-        android:id="@+id/firstNumberEditText"
-        android:layout_width="400px"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="numberSigned" />
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
 
-    <TextView
+        <ImageButton
+            android:id="@+id/btnSumNumbers"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/sum_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sum_numbers"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+
+    </FrameLayout>
+
+    <!-- Send Message -->
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Second Number:"
-        />
-    <EditText
-        android:id="@+id/secondNumberEditText"
-        android:layout_width="400px"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="numberSigned" />
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
 
-    <android.widget.Button
-        android:id="@+id/sumButton"
-        android:layout_width="200px"
-        android:layout_height="150px"
-        android:layout_gravity="center_horizontal"
-        android:text="SUM"
-        />
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/send_message_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            />
 
-    <TextView
-        android:id="@+id/resultTextView"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_message"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+    </FrameLayout>
+
+    <!-- Check Acceleration -->
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btnCheckAcceleration"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/acceleration_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
         />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_acceleration"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+    </FrameLayout>
 
-</LinearLayout>
+    <!-- Check Luminosity -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btnCheckLuminosity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/luminosity_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_luminosity"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+    </FrameLayout>
+
+    <!-- Check Temperature -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btnCheckTemperature"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/temperature_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_temperature"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+    </FrameLayout>
+
+    <!-- Check GeoPosition -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/btnCheckGeoPosition"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/geoposition_icon"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_geoposition"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+    </FrameLayout>
+
+</GridLayout>

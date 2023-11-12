@@ -1,5 +1,6 @@
 package com.example.sumtwonumbers
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.compose.material3.Text
@@ -10,6 +11,7 @@ import com.example.sumtwonumbers.ui.theme.SumTwoNumbersTheme
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 
@@ -18,16 +20,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val firstNumberEditText = findViewById<EditText>(R.id.firstNumberEditText)
-        val secondNumberEditText = findViewById<EditText>(R.id.secondNumberEditText)
-        val sumButton = findViewById<Button>(R.id.sumButton)
-        val resultTextView = findViewById<TextView>(R.id.resultTextView)
+        val btnSumNumbers = findViewById<ImageButton>(R.id.btnSumNumbers)
+        btnSumNumbers.setOnClickListener {
+            val intent = Intent(this, SumActivity::class.java)
+            startActivity(intent)
+        }
 
-        sumButton.setOnClickListener {
-            val firstNumber = firstNumberEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val secondNumber = secondNumberEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val sum = firstNumber + secondNumber
-            resultTextView.text = "Result: $sum"
+        val btnSendMessage = findViewById<ImageButton>(R.id.btnSendMessage)
+        btnSendMessage.setOnClickListener {
+            val intent = Intent(this, SendMessageActivity::class.java)
+            startActivity(intent)
         }
 
         Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show()
