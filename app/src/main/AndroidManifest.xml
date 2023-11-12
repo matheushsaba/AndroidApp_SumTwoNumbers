@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".SumActivity"/>
         <activity android:name=".SendMessageActivity"/>
+        <activity android:name=".ShowReceivedMessageActivity"/>
     </application>
 
 </manifest>

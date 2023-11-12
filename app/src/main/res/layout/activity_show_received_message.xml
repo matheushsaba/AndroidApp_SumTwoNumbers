@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Send a message to\nanother screen"
+        android:text="Message you sent:"
         android:gravity="center_horizontal"
         android:textFontWeight="800"
         android:textSize="30dp"
@@ -19,32 +19,14 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="50dp"
         />
 
     <TextView
+        android:id="@+id/receivedMessageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Your message:" />
-
-    <EditText
-        android:id="@+id/sendMessageEditText"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
-        android:inputType="text"
         />
-
-    <android.widget.Button
-        android:id="@+id/sendMessageButton"
-        android:layout_width="60dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Send"
-        />
-
-
 
 </LinearLayout>
