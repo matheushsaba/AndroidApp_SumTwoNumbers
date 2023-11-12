@@ -28,6 +28,7 @@
         <activity android:name=".ShowReceivedMessageActivity"/>
         <activity android:name=".AccelerometerValuesActivity"/>
         <activity android:name=".LuminosityValueActivity"/>
+        <activity android:name=".TouchValueActivity"/>
     </application>
 
 </manifest>

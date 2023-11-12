@@ -8,11 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.sumtwonumbers.ui.theme.SumTwoNumbersTheme
-import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : ComponentActivity() {
@@ -44,9 +40,9 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        val btnCheckTemperature = findViewById<ImageButton>(R.id.btnCheckTemperature)
-        btnCheckTemperature.setOnClickListener {
-            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+        val btnTouchCoordinates = findViewById<ImageButton>(R.id.btnCheckTemperature)
+        btnTouchCoordinates.setOnClickListener {
+            val intent = Intent(this, TouchValueActivity::class.java)
             startActivity(intent)
         }
 

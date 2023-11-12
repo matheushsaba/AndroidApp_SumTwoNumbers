@@ -2,13 +2,13 @@
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:columnCount="2"
     android:rowCount="3"
     android:orientation="vertical"
     android:alignmentMode="alignMargins"
     android:columnOrderPreserved="false"
-    android:padding="32dp"
+    android:padding="30dp"
     >
 
     <!-- Sum -->
@@ -19,6 +19,7 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
@@ -48,6 +49,7 @@
         android:layout_column="1"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
@@ -76,6 +78,7 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
@@ -104,6 +107,7 @@
         android:layout_column="1"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
@@ -124,7 +128,7 @@
             />
     </FrameLayout>
 
-    <!-- Check Temperature -->
+    <!-- Touch Coordinates -->
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -132,13 +136,14 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
             android:id="@+id/btnCheckTemperature"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/temperature_icon"
+            android:src="@drawable/touch_icon"
             android:layout_gravity="center_horizontal"
             android:background="@android:color/transparent"
             />
@@ -146,7 +151,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/check_temperature"
+            android:text="@string/touch_coordinates"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginTop="100dp"
             />
@@ -160,6 +165,7 @@
         android:layout_column="1"
         android:layout_gravity="center"
         android:layout_columnWeight="1"
+        android:layout_margin="20dp"
         >
 
         <ImageButton
