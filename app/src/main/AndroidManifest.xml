@@ -26,6 +26,7 @@
         <activity android:name=".SumActivity"/>
         <activity android:name=".SendMessageActivity"/>
         <activity android:name=".ShowReceivedMessageActivity"/>
+        <activity android:name=".AccelerometerValuesActivity"/>
     </application>
 
 </manifest>

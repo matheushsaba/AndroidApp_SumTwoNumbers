@@ -32,10 +32,32 @@ class MainActivity : ComponentActivity() {
             startActivity(intent)
         }
 
+        val btnCheckAcceleration = findViewById<ImageButton>(R.id.btnCheckAcceleration)
+        btnCheckAcceleration.setOnClickListener {
+            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnCheckLuminosity = findViewById<ImageButton>(R.id.btnCheckLuminosity)
+        btnCheckLuminosity.setOnClickListener {
+            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnCheckTemperature = findViewById<ImageButton>(R.id.btnCheckTemperature)
+        btnCheckTemperature.setOnClickListener {
+            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnCheckGeoposition = findViewById<ImageButton>(R.id.btnCheckGeoPosition)
+        btnCheckGeoposition.setOnClickListener {
+            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            startActivity(intent)
+        }
+
         Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show()
     }
-
-
 
     override fun onStart() {
         super.onStart()
