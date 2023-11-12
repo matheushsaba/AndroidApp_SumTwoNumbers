@@ -48,36 +48,36 @@ class MainActivity : ComponentActivity() {
 
         val btnCheckGeoposition = findViewById<ImageButton>(R.id.btnCheckGeoPosition)
         btnCheckGeoposition.setOnClickListener {
-            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            val intent = Intent(this, GeopositionActivity::class.java)
             startActivity(intent)
         }
 
-        Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show()
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        Toast.makeText(this, "OnStart", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-        Toast.makeText(this, "OnResume", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        Toast.makeText(this, "OnPause", Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-        Toast.makeText(this, "OnStop", Toast.LENGTH_SHORT).show()
-    }
+//    override fun onStart() {
+//        super.onStart()
+//
+//        Toast.makeText(this, "OnStart", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//
+//        Toast.makeText(this, "OnResume", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//
+//        Toast.makeText(this, "OnPause", Toast.LENGTH_SHORT).show()
+//    }
+//
+//    override fun onStop() {
+//        super.onStop()
+//
+//        Toast.makeText(this, "OnStop", Toast.LENGTH_SHORT).show()
+//    }
 
     override fun onDestroy() {
         super.onDestroy()
