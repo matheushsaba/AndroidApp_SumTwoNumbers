@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 
         val btnCheckLuminosity = findViewById<ImageButton>(R.id.btnCheckLuminosity)
         btnCheckLuminosity.setOnClickListener {
-            val intent = Intent(this, AccelerometerValuesActivity::class.java)
+            val intent = Intent(this, LuminosityValueActivity::class.java)
             startActivity(intent)
         }
 

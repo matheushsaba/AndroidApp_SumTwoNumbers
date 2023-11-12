@@ -27,6 +27,7 @@
         <activity android:name=".SendMessageActivity"/>
         <activity android:name=".ShowReceivedMessageActivity"/>
         <activity android:name=".AccelerometerValuesActivity"/>
+        <activity android:name=".LuminosityValueActivity"/>
     </application>
 
 </manifest>
